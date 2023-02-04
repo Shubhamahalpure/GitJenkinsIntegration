@@ -15,11 +15,11 @@ public class logintest {
 		//System.setProperty("webdriver.chrome.driver", "D://Desktop/chromedriver.exe");
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		driver.get("file:///D:/JBK%20Selenium/javabykiran-Selenium-Softwares/Offline%20Website/index.html");
+		driver.get("file:///D:/JBK%20Selenium/jbk-Selenium-Softwares/Offline%20Website/index.html");
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.loginToApplication();
-		Assert.assertEquals(driver.getTitle(), "JavaByKiran | Dashboard");
+		Assert.assertEquals(driver.getTitle(), "Jbk | Dashboard");
 	}
 
 }
